@@ -16,7 +16,7 @@ def get_sunrise_sunset(input_date: date) -> tuple[datetime, datetime]:
         tuple: A tuple containing sunrise and sunset as datetime objects in Madrid's timezone.
     """
     # Define the location for Madrid
-    madrid = LocationInfo("Madrid", "Spain")
+    madrid = LocationInfo("Madrid", "Spain", "Europe/Madrid", 40.4168, -3.7038)
 
     # Get Madrid's timezone
     tz = pytz.timezone(madrid.timezone)
